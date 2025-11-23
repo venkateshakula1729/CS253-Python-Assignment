@@ -3,7 +3,7 @@
 
 ## Task
 
-You are provided with a training dataset and a test dataset. The goal is to train a machine-learning model (SVM, KNN, Decision Tree, Random Forest, Naive Bayes, or similar) on this dataset and perform **multi-class classification** to predict the education level of election winners. Only standard Python ML libraries are used (pandas, NumPy, scikit-learn, etc.). No deep learning libraries such as PyTorch, TensorFlow, Keras, or ANN-based methods are allowed to be used.
+You are provided with a training dataset and a test dataset. The goal is to train a machine-learning model (SVM, KNN, Decision Tree, Random Forest, Naive Bayes, or similar) on this dataset and perform **multi-class classification** to predict the education level of election winners. Only standard Python ML libraries are used (pandas, NumPy, scikit-learn, etc.). No deep learning libraries such as PyTorch, TensorFlow, Keras, or ANN-based methods are used.
 
 ---
 
@@ -110,6 +110,17 @@ README.md
 
 ---
 
+## Results Summary
+
+| Model         | F1-score (macro) | Notes                                                                                                                                                     |
+| ------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| KNN           | 0.185            | Used as a simple baseline; performance is limited by feature scaling and class overlap in this dataset.                                                   |
+| SVM (SVC)     | 0.251            | Best performing model; margin-based classifier handles high-dimensional features and imbalanced classes comparatively well after tuning.                  |
+| Decision Tree | 0.218            | Learns non-linear rules and captures interactions, but tends to overfit noisy/categorical features, so generalisation is moderate.                        |
+| Random Forest | 0.210            | Bagging reduces variance relative to a single tree, but with our settings it is slightly biased toward majority classes, giving a lower macro F1 than DT. |
+| Naive Bayes   | 0.170            | Fast and simple, but the conditional independence assumption is violated for correlated socio-economic features, leading to weaker performance.           |
+
+
 ## Instructions
 
 1. Install all required libraries:
@@ -142,3 +153,4 @@ README.md
    * If `<path_to_test_file>` is omitted, the script defaults to `Data/raw/test.csv` (subject to how `main.py` is implemented).
    * If `<model_name>` is omitted, the SVC model is used by default.
    * `<model_name>` must be one of: `dt`, `knn`, `nbc`, `rf`, `svc` (without the `.py` extension).
+
