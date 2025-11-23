@@ -3,7 +3,7 @@
 
 ## Task
 
-You are provided with a training dataset and a test dataset. The goal is to train a machine-learning model (SVM, KNN, Decision Tree, Random Forest, Naive Bayes, or similar) on this dataset and perform **multi-class classification** to predict the education level of election winners. Only standard Python ML libraries are used (pandas, NumPy, scikit-learn, etc.). No deep learning libraries such as PyTorch, TensorFlow, Keras, or ANN-based methods are used.
+You are provided with a training dataset and a test dataset. The goal is to train a machine-learning model (SVM, KNN, Decision Tree, Random Forest, Naive Bayes, or similar) on this dataset and perform **multi-class classification** to predict the education level of election winners. Only standard Python ML libraries are used (pandas, NumPy, scikit-learn, etc.). No deep learning libraries such as PyTorch, TensorFlow, Keras, or ANN-based methods are allowed to be used.
 
 ---
 
