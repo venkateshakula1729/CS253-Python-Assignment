@@ -1,5 +1,5 @@
 
-# Multi-Class-Classification – Election Winner Education Level Prediction
+# Multi-Class-Classification – Election Winner Education Prediction
 
 ## Task
 
