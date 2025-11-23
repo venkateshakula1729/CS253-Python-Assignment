@@ -105,7 +105,7 @@ README.md
   Second-best submission generated using the SVC model.
   Public score: **0.23874**, private score: **0.24618**.
 
-* [`Output/final_submission_2.csv`](Output/final_submission_3.csv)
+* [`Output/final_submission_3.csv`](Output/final_submission_3.csv)
   Third-best submission generated using the Decision Tree model.
 
 ---
